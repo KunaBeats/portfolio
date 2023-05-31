@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@300;400;500&family=Signika+Negative:wght@400;600&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <h3 class="logo">PS:<span>DEV</span></h3>
+      <img class="menu-icon" src="images/menu_icon.png" />
+      <img class="close-icon" src="images/delete_icon.png" />
+      <div class="desktop-nav-bar">
+        <a href="#my_story">Meine Geschichte</a>
+        <a href="#techstack">Techstack</a>
+        <a href="#about_me">Über mich</a>
+        <a href="#projects">Projekte</a>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <main>
+        <nav>
+          <a class="close-menu" href="#my_story">Meine Geschichte</a>
+          <a class="close-menu" href="#techstack">Techstack</a>
+          <a class="close-menu" href="#about_me">Über mich</a>
+          <a class="close-menu" href="#projects">Projekte</a>
+        </nav>
+        <h1>Hallo, ich bin Patrick. <span>FrontEnd-Entwickler.</span></h1>
+        <img
+          class="profile-picture"
+          src="images/WhatsApp Image 2023-04-20 at 14.01.23.jpeg"
+        />
+      </main>
+
+      <section>
+        <div class="my-story-text">
+          <h2 id="my_story" class="section-headline">
+            Wie bin ich zum <span>Programmieren</span> gekommen?
+          </h2>
+          <p class="text-why-coding">
+            Durch Freunde, welche als Programmierer tätig sind, bin ich
+            neugierig geworden und habe mir die ersten Tutorials auf YouTube
+            angeschaut. Spätestens nach meiner ersten Zeile JavaScript hat mich
+            das Coding-Fieber gepackt. Auf diversen Plattformen wie
+            <a href="https://scrimba.com" target="_blank">Scrimba</a> und
+            <a href="https://udemy.com" target="_blank">Udemy</a> habe ich mich
+            seitdem weitergebildet und kann nicht aufhören mir neue Techniken
+            beizubringen und die vorhandenen zu verbessern. Da ich in meinem
+            gelernten Beruf schon seit längerem sehr unglücklich bin, habe ich
+            mich dazu entschlossen zukünftig als Programmierer arbeiten zu
+            wollen.
+          </p>
+        </div>
+      </section>
+
+      <article id="about_me" class="about-me">
+        <div class="about-me-text">
+          <h2>Über mich</h2>
+          <h3>Wer bin ich?</h3>
+          <p>Ich bin Patrick, 32 Jahre alt und komme aus Hannover.</p>
+          <h3>Was treibt mich an?</h3>
+          <p>
+            In einem Beruf zu arbeiten, der mir Spaß macht und mich täglich
+            fordert. In einem Beruf, in dem ich etwas erschaffen und gestalten
+            kann.
+          </p>
+          <h3>Was sind meine Ziele?</h3>
+          <p>
+            Mich ständig weiterzuentwickeln um meinem Team und dem Kunden einen
+            stetigen Mehrwert bieten zu können.
+          </p>
+          <h3>Was sind meine Stärken?</h3>
+
+          <li>Neugier</li>
+          <li>Teamfähigkeit</li>
+          <li>Kommunikation</li>
+          <li>Begeisterungsfähigkeit</li>
+        </div>
+      </article>
+
+      <article id="projects" class="projects">
+        <h2>Meine Projekte</h2>
+        <div class="mySlides fade">
+        <div class="projects-container">
+          <h3>E-Commerce-Product-Page</h3>
+          <img src="images/e_commerce.png" />
+          <p>
+            Hier habe ich eine E-Commerce Product Page von der Mentor Challenges
+            Seite gecodet. Hierfür habe ich HTML, CSS und JavaScript benutzt.
+            Die Seite ist responsive und enthält eine Slideshow in der
+            Mobile-Ansicht. Dazu einige Funktionen wie zB einen Warenkorb.
+          </p>
+          <div class="project-links-container">
+            <a href="https://e-commerce-page-gilt.vercel.app" target="_blank">Live Demo</a>
+            <a href="https://github.com/KunaBeats/e-commerce-page" target="_blank">GitHub</a>
+          </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="projects-container">
+            <h3>React Menu-App</h3>
+            <img src="images/react.png" />
+            <p>
+              Diese kleine Menu App wurde mit Vite - React gecodet. Sie enthält die Basic React Features
+              wie States und Probs. 
+            </p>
+            <div class="project-links-container">
+              <a href="https://menu-weld.vercel.app" target="_blank">Live Demo</a>
+              <a href="https://github.com/KunaBeats/menu" target="_blank">GitHub</a>
+            </div>
+            </div>
+          </div>
+        <div class="mySlides fade">
+        <div class="projects-container">
+          <h3>JavaFX Datenverwaltung</h3>
+          <img src="images/java.png" />
+          <p>
+            Dies ist mein Abschlussprojekt meines Java Kurses bei alfatraining. Die dafür verwendeten
+            Technologien sind JavaFX und Xampp für die Backend-Anbindung zur SQL Datenbank. Als 
+            Entwicklungsumgebung diente IntelliJ.
+          </p>
+          <div class="project-links-container">
+            <a href="https://github.com/KunaBeats/java-datenverwaltung" target="_blank">GitHub</a>
+          </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="projects-container">
+            <h3>Mein Portfolio</h3>
+            <img src="images/portfolio.png" />
+            <p>
+              Dies ist mein Portfolio, welches mit den Basic Technologien HTML, CSS und JavaScript gecodet wurde.
+              Der Code enthält semantisches HTML und die Seite ist responsive. Das Layout hatte keine Vorlage, sondern
+              wurde nach meinem persönlichem Geschmack designt.
+            </p>
+            <div class="project-links-container">
+              <a href="" target="_blank">GitHub</a>
+            </div>
+            </div>
+          </div>
+        <button id="swipe-left" class="swipe-left swipe-btn">
+          <svg class="swipe-symbol1" width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </button>
+      <button id="swipe-right" class="swipe-right swipe-btn">
+          <svg class="swipe-symbol2" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+      </button>
+      </article>
+
+      <div class="techstack">
+        <h3 id="techstack">Mein <span>Techstack</span></h3>
+        <div class="techstack-logos">
+          <img src="images/html-logo.png" alt="html-logo" />
+          <img src="images/css-logo.png" alt="css-logo" />
+          <img src="images/javascript-logo.png" alt="javascript-logo" />
+          <img src="images/react-logo.png" alt="react-logo" />
+          <img src="images/typescript-logo.png" alt="typescript-logo" />
+          <img src="images/github-logo.png" alt="github-logo" />
+          <img src="images/java-logo.png" alt="java-logo" />
+          <img src="images/nodejs-logo.png" alt="nodejs-logo" />
+        </div>
+      </div>
+
+      <footer>
+        <h3 class="logo logo-footer">PS:<span>DEV</span></h3>
+        <div>
+          <h3 class="footer-headlines">Socials</h3>
+          <div>
+            <img class="footer-linkedin-logo" src="images/pngwing.com.png" />
+            <a href="https://www.linkedin.com/in/patrick-schimmel-a877a4267/">LinkedIn</a>
+          </div>
+          <div>
+            <img class="footer-github-logo" src="images/64439.png" />
+            <a href="https://github.com/KunaBeats">GitHub</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-headlines">Links</h3>
+          <a href="#my_story">Meine Geschichte</a>
+          <a href="#techstack">Techstack</a>
+          <a href="#about_me">Über mich</a>
+          <a href="#projects">Projekte</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  .main-content {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30em 35em 15em 5em;
+    /* grid-template-areas: 
+        "main section"
+        "about projects"
+        "about projects"
+        "techstack techstack"
+        ; */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/** LINKS **/
+
+a {
+  color: #2da8c1;
+  text-decoration: none;
+}
+
+nav > a {
+  color: #03045e;
+}
+
+a:hover {
+  color: #080a97;
+}
+
+/** Nav & Header **/
+
+nav {
+  display: none;
+}
+
+.nav-open {
+  background-color: #48cae4;
+  width: 100%;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.75em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background-color: #03045e;
+  color: #48cae4;
+  height: 5em;
+  width: 100vw;
+  font-family: "Tilt Neon";
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #48cae4;
+}
+
+.logo {
+  border: 1px solid #48cae4;
+  padding: 2px 5px;
+  width: 80px;
+  height: 30px;
+}
+
+.logo > span {
+  color: #90e0ef;
+}
+
+.menu-icon {
+  width: 2em;
+  color: #48cae4;
+  display: block;
+}
+
+.close-icon {
+  width: 2em;
+  display: none;
+}
+
+.desktop-nav-bar {
+  display: none;
+}
+
+@media (min-width: 675px) {
+  .desktop-nav-bar {
+    display: flex;
+  }
+  .desktop-nav-bar > a {
+    margin-left: 1em;
+  }
+  .desktop-nav-bar > a:hover {
+    color: white;
+  }
+  .menu-icon {
+    display: none !important;
+  }
+}
+
+/** MAIN **/
+
+main {
+  color: #48cae4;
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  background-color: #03045e;
+  position: relative;
+}
+
+main > h1 > span {
+  color: #90e0ef;
+}
+
+.profile-picture {
+  width: 50%;
+  margin-bottom: 2.5em;
+  border-radius: 1em;
+}
+
+/** WHY CODING **/
+
+section {
+  background-color: white;
+  color: #03045e;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-why-coding {
+  font-size: 0.85rem;
+  line-height: 1.25em;
+}
+
+.section-headline {
+  margin-top: 0;
+}
+
+section > h2 > span {
+  color: #080a97;
+}
+
+@media (min-width: 1000px) {
+  main {
+    color: #48cae4;
+    padding: 2em;
+    background-color: #03045e;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* grid-area: main; */
+  }
+
+  main > h1 > span {
+    color: #90e0ef;
+  }
+
+  .profile-picture {
+    width: 25%;
+  }
+
+  section {
+    background-color: white;
+    color: #03045e;
+    padding: 2em;
+    /* grid-area: section; */
+  }
+
+  .section-headline {
+    margin-top: 0;
+  }
+
+  .my-story-text {
+    max-width: 400px;
+  }
+}
+
+/** TECHSTACK **/
+
+.techstack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid #90e0ef;
+}
+
+.techstack > h3 {
+  font-size: 1.25rem;
+}
+
+.techstack > h3 > span {
+  color: #080a97;
+}
+
+.techstack-logos * {
+  width: 50px;
+  margin: 1em 1em;
+}
+
+.techstack-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .techstack {
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/** ABOUT ME **/
+
+.about-me {
+  background-color: #48cae4;
+  color: #03045e;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-text {
+  max-width: 400px;
+}
+
+.about-me > p {
+  font-size: 0.85rem;
+}
+
+/** PROJECTS **/
+
+.projects {
+  padding: 2em;
+  background-color: #03045e;
+  color: #48cae4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 1em;
+  height: 400px;
+}
+
+.projects-container > p {
+  font-size: 0.9rem;
+  line-height: 1.2em;
+}
+.project-links-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.project-links-container > a {
+  background-color: #48cae4;
+  color: #03045e;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.project-links-container > a:hover {
+  background-color: white;
+}
+
+.projects-container > img {
+  width: 200px;
+}
+
+@media (min-width: 1000px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/** FOOTER **/
+
+footer {
+  background-color: #03045e;
+  height: 160px;
+  width: 100%;
+  color: white;
+  border-top: 1px solid #48cae4;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-linkedin-logo {
+  width: 10px;
+}
+
+.footer-github-logo {
+  width: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+footer * h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer * a {
+  font-size: 0.75rem;
+}
+
+.logo-footer {
+  margin-top: 0;
+}
+
+.footer-headlines {
+  font-size: 1rem;
+}
+
+@media (min-width: 1000px) {
+  footer {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer-headlines {
+    font-size: 1.25rem;
+  }
+
+  footer * a {
+    font-size: 1rem;
+  }
+}
+
+/* Slide Show */
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.swipe-btn {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #48cae4;
+  padding: 5px;
+  background-color: #48cae4;
+}
+
+.swipe-left {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+.swipe-right {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+
+.swipe-left:hover,
+.swipe-right:hover {
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
